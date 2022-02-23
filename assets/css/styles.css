@@ -35,7 +35,7 @@
     /*======== Font Weight =========*/
 
     --font-medium: 500;
-    --font-semibolde: 600;
+    --font-semibold: 600;
 
     /*========== Z index ==========*/
 
@@ -65,5 +65,136 @@
 
 html{
     scroll-behavior: smooth; /*  Adicione um efeito de rolagem suave ao documento*/
+}
+
+body, button, input, textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.25rem;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.section{
+    padding: 4.5rem 0 1rem;
+}
+
+.section_title, .section_subtitulo{
+    text-align: center;
+}
+
+.section_title{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+}
+
+.section_subtitulo{
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+/* =============  HEADER & NAV ============*/
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: var(--z-fixed);
+}
+
+.nav{
+    height: var(--header-heigth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo{
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.nav_logo:hover{
+    color: var(--first-color-alt);
+}
+
+.nav_menu{
+    position: fixed;
+    bottom: 1rem;
+    background: hsla(var(--second-hue), 32%, 16%, .8);
+    width: 90%;
+    border-radius: 4rem;
+    padding: 1rem 2.25rem;
+    backdrop-filter: blur(10px);
+}
+
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link{
+    color: var(--text-color);
+    font-size: 1.25rem;
+    padding: .4rem;
+    display: flex;
+    border-radius: 5rem;
+}
+
+.active-link{
+    background: linear-gradient(180deg,
+                hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                hsla(var(--first-hue), var(--sat), var(--lig), .2)
+                );
+
+    box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
 
