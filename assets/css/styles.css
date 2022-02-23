@@ -64,6 +64,6 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*  Adicione um efeito de rolagem suave ao documento*/
 }
 
