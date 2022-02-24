@@ -259,7 +259,8 @@ img{
     gap: 1.5rem;
 }
 
-.home_social, .home_scroll{
+.home_social, 
+.home_scroll{
     position: absolute;
 }
 
@@ -268,5 +269,11 @@ img{
     left: 0;
     display: grid;
     row-gap: .5rem;
+}
+
+.home_social-link{
+    width: max-content;
+    background: var(--container-color);
+    color: var(--first-color);
 }
 
