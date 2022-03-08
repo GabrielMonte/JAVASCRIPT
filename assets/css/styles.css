@@ -259,8 +259,7 @@ img{
     gap: 1.5rem;
 }
 
-.home_social, 
-.home_scroll{
+.home_social, .home_scroll{
     position: absolute;
 }
 
@@ -275,5 +274,19 @@ img{
     width: max-content;
     background: var(--container-color);
     color: var(--first-color);
+    padding: .25rem;
+    border-radius: .25rem;
+    display: flex;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.home_social-link:hover{
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+.home_social::after{
+    
 }
 
